@@ -61,7 +61,7 @@ nav ul li a {
     color: #1d1c1c;
     font-family: "Goldman", sans-serif;
     font-weight: 500;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     font-style: normal;  
 }
 
@@ -93,6 +93,7 @@ main {
 
 .text>.greetings>h1 {
     color: blue;
+    font-size: 2.5rem;
 }
 
 .text>.greetings {
