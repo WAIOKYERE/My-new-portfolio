@@ -104,15 +104,19 @@ main {
     color: #DC4809;
 }
 
-.text>.greetings>.btnContainer a {
-    text-decoration: none;
-}
 
 .roboto-medium {
     font-family: "Roboto", sans-serif;
     font-size: 1.3rem;
     font-weight: 400;
     font-style: normal;
+}
+
+/* .text>.greetings>.btnContainer{
+height: 25px;} */
+
+.text>.greetings>.btnContainer a {
+    text-decoration: none;
 }
 
 .btn-hire,
@@ -127,8 +131,14 @@ main {
 }
 
 .btn-hire {
+    border: 2px solid rgb(0, 0, 0);
     background-color: #2c2c2c;
     color: #fff;
+}
+
+.btn-cv {
+    border: 2px solid black;
+    color: #000000;
 }
 
 .commonBtn {
@@ -147,20 +157,16 @@ main {
 
 
 .btn-hire:hover {
+    border: 2px solid #eb0000ea;
     background-color: #eb0000ea;
     color: #ffffff;
-}
-
-.btn-cv {
-    border: 2px solid black;
-    color: #000000;
 }
 
 .btn-cv:hover {
     background-color: rgb(235, 0, 0);
     color: #ffffff;
-    border: #000000;
-    transition: all 30ms;
+    border: 2px solid #eb0000ea;
+    transition: all cubic-bezier(0.6, -0.28, 1.735, 0.045);
 }
 
 .profile-pic img {
@@ -339,7 +345,7 @@ td{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 50px 20px;
+    margin: 50px 20px  ;
 }
 
 .technologies .Ticon {
