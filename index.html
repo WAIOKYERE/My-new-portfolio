@@ -7,9 +7,14 @@
   <title>Portfolio Homepage</title>
   <link rel="stylesheet" href="./styles/portfolio.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Goldman:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 
 </head>
@@ -23,7 +28,7 @@
       <ul>
         <li><a href="#home">HOME</a></li>
         <li><a href="#about">ABOUT</a></li>
-        <li><a href="#jobs">JOBS</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
         <li><a href="#contact">CONTACT</a></li>
       </ul>
     </nav>
@@ -36,13 +41,18 @@
           <div class="greetings">
             <h1>Hi there &#128075,</h1>
             <h2>I am Samuel Wai Okyere</h2>
-            <h3>UI/UX DESIGNER & WEB DEVELOPER</h3>
-            <p class="roboto-medium"> I am a dynamic professional specializing in UI/UX design, web development, mobile
+
+            <div class="textChangeContainer">
+              <h3 id="textChange"></h3>
+            </div>
+
+            <!-- <h3>UI/UX DESIGNER & WEB DEVELOPER</h3> -->
+            <!-- <p class="roboto-medium"> I am a dynamic professional specializing in UI/UX design, web development, mobile
               and PC technology.
               With over a decade of experience in mobile and PC repairs, as well as sales of accessories, and a
               cutting Degree in Computer Science,
               <br> I offer a transformative approach to every project I undertake.
-            </p>
+            </p> -->
 
             <br>
             <div class="btnContainer">
@@ -83,130 +93,255 @@
             solutions.
           </p>
         </div>
+
         <div class="dropContainer">
           <div class="aboutBtn">
-          <button class="aboutTablink" onclick="openPage('Skills', this)" id="defaultOpen">Skills</button>
-          <button class="aboutTablink" onclick="openPage('Experience', this)">Experience</button>
-          <button class="aboutTablink" onclick="openPage('Education', this)">Education</button>
-          <button class="aboutTablink" onclick="openPage('Employment', this)">Development</button>
-          <button class="aboutTablink" onclick="openPage('Employment', this)">Employment</button>
-        </div>
+            <button class="aboutTablink" onclick="openPage('Skills', this)" id="defaultOpen">Skills</button>
+            <button class="aboutTablink" onclick="openPage('Experience', this)">Experience</button>
+            <button class="aboutTablink" onclick="openPage('Education', this)">Education</button>
+            <button class="aboutTablink" onclick="openPage('Development', this)">Development</button>
+            <button class="aboutTablink" onclick="openPage('Employment', this)">Employment</button>
+          </div>
 
-        <div class="aboutBtnContent">
-          <div id="Home" class="tabcontent">
-            <h3>Home</h3>
-            <p>Home is where the heart is..</p>
-          </div>
-          
-          <div id="Skills" class="tabcontent">
-            <h3>Skills</h3>
-            <p>Some news this fine day!</p> 
-          </div>
-          
-          <div id="Experience" class="tabcontent">
-            <h3>Experience</h3>
-            <p>Get in touch, or swing by for a cup of coffee.</p>
-            
-          </div>
-          
-          <div id="Education" class="tabcontent">
-            
-            <div class="education-info">
-              <h3>Educational Background</h3>
-              <table>
-            
-                <tr>
-                  <td>Aug 2018-Nov 2022</td>
-                  <td>University Of Cape Coast</td>
-                  <td>BSc Computer Science - CGPA 3.3</td>
-                </tr>
-                <tr>
-                  <td>Aug 2012 - May 2015</td>
-                  <td>Obuasi Senior High Technical School</td>
-                  <td>Diploma In General Science</td>
-                </tr>
-              </table>
-            </div>
-    
+          <div class="aboutBtnContent">
 
-          </div>
-          
-          <div id="Employment" class="tabcontent">
-            <h3>Employment Status</h3>
-            <p>I am open for employment </p>
-            <p> On-site or Remote</p>
-          </div>
-       
-          <div id="Development" class="tabcontent">
-            <div class="development">
-              <h3>Professional development</h3>
-              <table>
-                <tr>
-                  <td>May 2024 - July 2024</td>
-                  <td>ALX</td>
-                  <td>AI Career Essentials</td>
-                </tr>
-                <tr>
-                  <td>Jan 2024 - Present</td>
-                  <td>Udemy</td>
-                  <td>The Complete 2024 Web Development Bootcamp</td>
-                </tr>
-                <tr>
-                  <td>Nov 2023 -Dec 2023</td>
-                  <td>Alison</td>
-                  <td>Diploma in Website Development Using HTML and CSS</td>
-                </tr>
-                <tr>
-                  <td>May 2023 - June 2023</td>
-                  <td>Alison</td>
-                  <td>Figma Design Basics and Features</td>
-                </tr>
-                <tr>
-                  <td>Feb 2019 - April 2019</td>
-                  <td>Alison</td>
-                  <td>Microsoft Office 2010-Revised 2018</td>
-                </tr>
-              </table>
+            <div id="Skills" class="tabcontent">
+              <h3>Skills</h3>
+              <p>My Skills</p>
+            </div>
+
+            <div id="Experience" class="tabcontent">
+              <h3>Experience</h3>
+              <p>My experiences</p>
+
+            </div>
+
+            <div id="Education" class="tabcontent">
+
+              <div class="education-info">
+                <h3>Educational Background</h3>
+                <table>
+
+                  <tr>
+                    <td>Aug 2018-Nov 2022</td>
+                    <td>University Of Cape Coast</td>
+                    <td>BSc Computer Science - CGPA 3.3</td>
+                  </tr>
+                  <tr>
+                    <td>Aug 2012 - May 2015</td>
+                    <td>Obuasi Senior High Technical School</td>
+                    <td>Diploma In General Science</td>
+                  </tr>
+                </table>
+              </div>
+
+
+            </div>
+
+            <div id="Employment" class="tabcontent">
+              <h3>Employment Status</h3>
+              <p>I am open for employment </p>
+              <p> On-site or Remote</p>
+            </div>
+
+            <div id="Development" class="tabcontent">
+              <div class="development">
+                <h3>Professional development</h3>
+                <table>
+                  <tr>
+                    <td>June 2024 - August 2024</td>
+                    <td>AWS</td>
+                    <td>Certified Cloud Practitioner</td>
+                  </tr>
+                  <tr>
+                    <td>May 2024 - July 2024</td>
+                    <td>ALX</td>
+                    <td>AI Career Essentials</td>
+                  </tr>
+                  <tr>
+                    <td>Jan 2024 - Present</td>
+                    <td>Udemy</td>
+                    <td>The Complete 2024 Web Development Bootcamp</td>
+                  </tr>
+                  <tr>
+                    <td>Nov 2023 -Dec 2023</td>
+                    <td>Alison</td>
+                    <td>Diploma in Website Development Using HTML and CSS</td>
+                  </tr>
+                  <tr>
+                    <td>May 2023 - June 2023</td>
+                    <td>Alison</td>
+                    <td>Figma Design Basics and Features</td>
+                  </tr>
+                  <tr>
+                    <td>Feb 2019 - April 2019</td>
+                    <td>Alison</td>
+                    <td>Microsoft Office 2010-Revised 2018</td>
+                  </tr>
+                </table>
+              </div>
             </div>
           </div>
+
         </div>
-          
-        </div>
-      </section>
-    </div>
-      
+    </section>
+
+
     <section class="technologies">
 
-      <!-- leftarrow -->
       <div class="techIcons">
         <i class="fa-solid fa-arrow-left Ticon"></i>
-        <i class="fa-brands fa-html5 Ticon"></i>       
+        <i class="fa-brands fa-html5 Ticon"></i>
         <i class="fa-brands fa-css3-alt Ticon"></i>
         <i class="fa-brands fa-square-js Ticon"></i>
         <i class="fa-brands fa-bootstrap Ticon"></i>
         <i class="fa-brands fa-node Ticon"></i>
         <i class="fa-brands fa-github Ticon"></i>
+        <i class="fa-brands fa-figma Ticon"></i>
         <i class="fa-solid fa-arrow-right Ticon"></i>
-        <!-- rightarrow -->.
-
       </div>
+
     </section>
 
+    <section id="portfolio">
+      <div class="portfolio">
+        <div class="header">
+          <h2>Portfolio</h2>
+        </div>
 
-    <div class="portfolio">
-      <div class="header">
-        <h2>Portfolio</h2>
+        <div class="PortfolioBtnGroup">
+          <button class="PortfolioBtn" onclick="openAll('all', this)" id="openDefault">ALL</button>
+          <button class="PortfolioBtn" onclick="openPortfolio('Institutional', this)">Institutional</button>
+          <button class="PortfolioBtn" onclick="openPortfolio('autoMobile', this)">Auto Moile</button>
+          <button class="PortfolioBtn" onclick="openPortfolio('Financial', this)">Financial</button>
+          <button class="PortfolioBtn" onclick="openPortfolio('eCommerce', this)">E- Commerce</button>
+          <button class="PortfolioBtn" onclick="openPortfolio('aI', this)">A.I</button>
+        </div>
+
+
+        <div class="PortfolioContent">
+
+          <div id="Institutional" class="all">
+            Institutional
+          </div>
+
+          <div id="autoMobile" class="all">
+            autoMobile
+          </div>
+
+          <div id="Financial" class="all">
+            Financial
+          </div>
+
+          <div id="eCommerce" class="all">
+            E-commerce
+          </div>
+
+          <div id="aI" class="all">
+            My AI
+          </div>
+
+
+
+
+
+
+          <div class="main">
+            <h1>Responsive Card Grid Layout</h1>
+            <ul class="cards">
+              <li class="cards_item">
+                <div class="card">
+                  <div class="card_image"><img src="https://picsum.photos/500/300/?image=10"></div>
+                  <div class="card_content">
+                    <h2 class="card_title">Card Grid Layout</h2>
+                    <p class="card_text">Demo of pixel perfect pure CSS simple responsive card grid layout</p>
+                    <button class="btn card_btn">Read More</button>
+                  </div>
+                </div>
+              </li>
+              <li class="cards_item">
+                <div class="card">
+                  <div class="card_image"><img src="https://picsum.photos/500/300/?image=5"></div>
+                  <div class="card_content">
+                    <h2 class="card_title">Card Grid Layout</h2>
+                    <p class="card_text">Demo of pixel perfect pure CSS simple responsive card grid layout</p>
+                    <button class="btn card_btn">Read More</button>
+                  </div>
+                </div>
+              </li>
+              <li class="cards_item">
+                <div class="card">
+                  <div class="card_image"><img src="https://picsum.photos/500/300/?image=11"></div>
+                  <div class="card_content">
+                    <h2 class="card_title">Card Grid Layout</h2>
+                    <p class="card_text">Demo of pixel perfect pure CSS simple responsive card grid layout</p>
+                    <button class="btn card_btn">Read More</button>
+                  </div>
+                </div>
+              </li>
+              <li class="cards_item">
+                <div class="card">
+                  <div class="card_image"><img src="https://picsum.photos/500/300/?image=14"></div>
+                  <div class="card_content">
+                    <h2 class="card_title">Card Grid Layout</h2>
+                    <p class="card_text">Demo of pixel perfect pure CSS simple responsive card grid layout</p>
+                    <button class="btn card_btn">Read More</button>
+                  </div>
+                </div>
+              </li>
+              <li class="cards_item">
+                <div class="card">
+                  <div class="card_image"><img src="https://picsum.photos/500/300/?image=17"></div>
+                  <div class="card_content">
+                    <h2 class="card_title">Card Grid Layout</h2>
+                    <p class="card_text">Demo of pixel perfect pure CSS simple responsive card grid layout</p>
+                    <button class="btn card_btn">Read More</button>
+                  </div>
+                </div>
+              </li>
+              <li class="cards_item">
+                <div class="card">
+                  <div class="card_image"><img src="https://picsum.photos/500/300/?image=2"></div>
+                  <div class="card_content">
+                    <h2 class="card_title">Card Grid Layout</h2>
+                    <p class="card_text">Demo of pixel perfect pure CSS simple responsive card grid layout</p>
+                    <button class="btn card_btn">Read More</button>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </div>
+
       </div>
 
-      <div class="skills-list">
-        <div class="skill" id="all">ALL</div>
-        <div class="skill" id="html">HTML5</div>
-        <div class="skill" id="css">CSS3</div>
-        <div class="skill" id="js">JavaScript</div>
-        <div class="skill" id="react">React.js</div>
-        <div class="skill" id="node">Node.js</div>
+    </section>
+
+    <section id="contact">
+
+      <div class="contactContainer">
+
+        <div class="contactContent">
+          <h3>Link Up</h3>
+        </div>
+
       </div>
-    </div>
+
+    </section>
 
 
 
