@@ -105,34 +105,46 @@ main {
 
 .textChangeContainer {
     height: 80px;
-    width: 100%; 
-    padding: 0;  
-    margin: 0;  
+    width: 100%;
+    padding: 0;
+    margin: 0;
     display: flex;
     align-items: center;
 }
 
-.textChangeContainer > h3 {
+.textChangeContainer>h3 {
 
-        font-size: 2.2rem;
-        white-space: wrap;
-        overflow: hidden;
-        display: inline-block;
-        animation: typing 4s steps(40, end), blink-caret 0.75s step-end infinite;
-        overflow-wrap: break-word; 
-        margin: 0;  
-        padding: 0; 
-    
+    font-size: 2.2rem;
+    white-space: wrap;
+    overflow: hidden;
+    display: inline-block;
+    animation: typing 4s steps(40, end), blink-caret 0.75s step-end infinite;
+    overflow-wrap: break-word;
+    margin: 0;
+    padding: 0;
+
 }
 
 @keyframes typing {
-    from { width: 0; }
-    to { width: 100%; }
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 100%;
+    }
 }
 
 @keyframes blink-caret {
-    from, to { border-color: transparent; }
-    50% { border-color: #000000; }
+
+    from,
+    to {
+        border-color: transparent;
+    }
+
+    50% {
+        border-color: #000000;
+    }
 }
 
 
@@ -165,7 +177,7 @@ height: 25px;} */
     border: 2px solid rgb(0, 0, 0);
     background-color: #2c2c2c;
     color: #fff;
-    border-radius: 0 0 35px  0;
+    border-radius: 0 0 35px 0;
     margin-left: 0;
 
 }
@@ -173,7 +185,8 @@ height: 25px;} */
 .btn-cv {
     border: 2px solid black;
     color: #000000;
-    border-radius: 35px 0 0 0; /* Only curve the top-right corner */
+    border-radius: 35px 0 0 0;
+    /* Only curve the top-right corner */
 
 }
 
@@ -409,7 +422,7 @@ td {
     text-align: center;
 }
 
-.PortfolioBtnGroup{
+.PortfolioBtnGroup {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -417,7 +430,7 @@ td {
 
 
 
-.PortfolioBtn{
+.PortfolioBtn {
     border: 2px solid #000000;
     padding: 10px 20px;
     margin: 0px 10px 2px 5px;
@@ -427,22 +440,28 @@ td {
     border-radius: 5px;
 }
 
-.PortfolioContent{
+.PortfolioContent {
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: inherit;
     width: 100%;
     height: auto;
+}
+
+.all{
+    display: flex;
 }
 
 .PortfolioBtn:hover {
     background-color: #ddd;
 }
 
-.contactContainer{
+.contactContainer {
     width: 50%;
     margin: auto;
 }
 
-.contactContent{
-}
+.contactContent {}
 
 /* .tech-icons {
     display: flex;
@@ -469,16 +488,16 @@ td {
 
 
 
-img {
+/* img {
   height: auto;
   max-width: 100%;
   vertical-align: middle;
-}
+} */
 
-.btn {
+/* .btn {
   color: #ffffff;
   padding: 0.8rem;
-  font-size: 14px;
+  font-size: 1rem;
   text-transform: uppercase;
   border-radius: 4px;
   font-weight: 400;
@@ -491,69 +510,68 @@ img {
 
 .btn:hover {
   background-color: rgba(255, 255, 255, 0.12);
-}
+} */
 
-.cards {
-  display: flex;
-  flex-wrap: wrap;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
+
 
 .cards_item {
-  display: flex;
-  padding: 1rem;
+    width: 20px;
+
+    display: flex;
+    padding: 1rem;
 }
 
 @media (min-width: 40rem) {
-  .cards_item {
-    width: 50%;
-  }
+    .cards_item {
+        width: 50%;
+    }
 }
 
 @media (min-width: 56rem) {
-  .cards_item {
-    width: 33.3333%;
-  }
+    .cards_item {
+        width: 33.3333%;
+    }
 }
 
 .card {
-  background-color: white;
-  border-radius: 0.25rem;
-  box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
-  display: flex;
-  flex-direction: column;
-  overflow: hidden;
+    margin: 40px 10px 20px 20px ;
+    width: 30%;
+    background-color: rgb(255, 255, 255);
+    border-radius: 25px;
+    box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
 }
 
 .card_content {
-  padding: 1rem;
-  background: linear-gradient(to bottom left, #EF8D9C 40%, #FFC39E 100%);
+    padding: 1rem;
+    background: linear-gradient(to bottom left, #b3adae 40%, #bbb0a9 100%);
 }
 
 .card_title {
-  color: #ffffff;
-  font-size: 1.1rem;
-  font-weight: 700;
-  letter-spacing: 1px;
-  text-transform: capitalize;
-  margin: 0px;
+    color: #ffffff;
+    font-size: 1.1rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+    margin: 0px;
 }
 
 .card_text {
-  color: #ffffff;
-  font-size: 0.875rem;
-  line-height: 1.5;
-  margin-bottom: 1.25rem;    
-  font-weight: 400;
+    color: #ffffff;
+    font-size: 0.875rem;
+    line-height: 1.5;
+    margin-bottom: 1.25rem;
+    font-weight: 400;
 }
-.made_by{
-  font-weight: 400;
-  font-size: 13px;
-  margin-top: 35px;
-  text-align: center;
-}
+/* 
+.made_by {
+    font-weight: 400;
+    font-size: 13px;
+    margin-top: 35px;
+    text-align: center;
+} */
 
 
 
