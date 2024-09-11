@@ -7,6 +7,7 @@
   <title>Portfolio Homepage</title>
   <link rel="stylesheet" href="./styles/portfolio.css" />
   <link rel="stylesheet" href="./styles/contact.css">
+  <link rel="stylesheet" href="./styles/responsive.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
@@ -20,14 +21,14 @@
 
 </head>
 
-<body>
+<body id="homepage">
   <header>
     <div class="logo">
       <h1>W<span class="second">A</span>I.DEV</h1>
     </div>
     <nav>
       <ul>
-        <li><a href="#home">HOME</a></li>
+        <li><a href="#homepage">HOME</a></li>
         <li><a href="#about">ABOUT</a></li>
         <li><a href="#portfolio">Portfolio</a></li>
         <li><a href="#contact">CONTACT</a></li>
@@ -57,7 +58,7 @@
 
             <br>
             <div class="btnContainer">
-              <a href="./Resources/docs/SAMUEL WAI OKYERE _ CV.pdf" class="btn-hire" target="_blank">Hire Me</a>
+              <a href="#contact" class="btn-hire" target="_blank">Hire Me</a>
               <a href="https://waiokyere.github.io/My-CV/" class="btn-cv" target="_blank">View CV On Web</a>
             </div>
           </div>
@@ -191,77 +192,19 @@
     <section class="technologies">
 
       <div class="techIcons">
-        <i class="fa-solid fa-arrow-left Ticon"></i>
+        <!-- <i class="fa-solid fa-arrow-left Ticon"></i> -->
+        <i class="fa-brands fa-figma Ticon"></i>
         <i class="fa-brands fa-html5 Ticon"></i>
         <i class="fa-brands fa-css3-alt Ticon"></i>
         <i class="fa-brands fa-square-js Ticon"></i>
         <i class="fa-brands fa-bootstrap Ticon"></i>
         <i class="fa-brands fa-node Ticon"></i>
         <i class="fa-brands fa-github Ticon"></i>
-        <i class="fa-brands fa-figma Ticon"></i>
-        <i class="fa-solid fa-arrow-right Ticon"></i>
+        <i class="fa-brands fa-npm Ticon"></i>
+        <!-- <i class="fa-solid fa-arrow-right Ticon"></i> -->
       </div>
 
     </section>
-    <!-- 
-    <section id="portfolio">
-      <div class="portfolio">
-        <div class="header">
-          <h2>Portfolio</h2>
-        </div>
-
-        <div class="PortfolioBtnGroup">
-          <button class="PortfolioBtn" onclick="openAll('all', this)" id="openDefault">ALL</button>
-          <button class="PortfolioBtn" onclick="openPortfolio('Institutional', this)">Institutional</button>
-          <button class="PortfolioBtn" onclick="openPortfolio('autoMobile', this)">Auto Moile</button>
-          <button class="PortfolioBtn" onclick="openPortfolio('Financial', this)">Financial</button>
-          <button class="PortfolioBtn" onclick="openPortfolio('eCommerce', this)">E- Commerce</button>
-          <button class="PortfolioBtn" onclick="openPortfolio('aI', this)">A.I</button>
-        </div>
-
-
-        <div class="PortfolioContent">
-
-          <div id="Institutional" >
-
-            <div class="card all">
-              <div class="card_image">
-                <img src="https://picsum.photos/500/300/?image=10">
-              </div>
-              <div class="card_content">
-                <h2 class="card_title">Card Grid Layout</h2>
-                <p class="card_text">Demo of pixel perfect pure CSS simple responsive card grid layout</p>
-                <button class="btn card_btn">Read More</button>
-              </div>
-            </div>
-          
-          </div>
-
-          <div id="autoMobile" >
-            <div class="card all">
-
-            </div>
-          </div>
-
-          <div id="Financial" >
-            <div class="card all"></div>
-          </div>
-
-          <div id="eCommerce">
-<div class="card all"></div> 
-         </div>
-
-          <div id="aI" class="all">
-            <div class="card all"></div>
-          </div>
-
-
-
-        </div>
-
-      </div>
-
-    </section> -->
 
     <section id="portfolio">
       <div class="portfolio">
@@ -421,6 +364,44 @@
 
             <div class="contactMe">
               <h2 class="contactHeaders">CONTACT ME</h2>
+
+              <div class="social">
+                <div class="eMail">
+                  <i class="fa-solid fa-envelope Cicon"></i>
+                  <a href="mailto:waiokyere3@outlook.com">waiokyere3@outlook.com</a>
+                </div>
+
+                <div class="phone">
+                  <i class="fa-solid fa-phone Cicon"></i>
+
+                  <a href="tel:+233545154225"> +233 545154225</a>
+
+                </div>
+
+                <div class="links">
+
+                  <a href="https://www.linkedin.com/in/samuel-wai-okyere" target="_blank"><i class="fa-brands fa-linkedin Cicon"></i></a>
+
+                  <a href="http://" target="_blank"><i class="fa-brands fa-square-x-twitter Cicon"></i></a>
+
+                  <a href="http://www.youtube.com/@TechExplore-n2h" target="_blank"><i class="fa-brands fa-youtube Cicon"></i></a>
+
+                  <a href="https://www.instagram.com/waiokyere?igsh=MXQxN2pxZWUwNmdmdw==" target="_blank"><i class="fa-brands fa-square-instagram Cicon"></i></a>
+
+                  <a href="https://www.facebook.com/samuelwai.okyere?mibextid=ZbWKwL" target="_blank"><i class="fa-brands fa-facebook Cicon"></i></a>
+
+                </div>
+
+                <div class="Cbuttons">
+                  <button class="btn card_btn">Download CV <i class="fa-solid fa-file-arrow-down Cicon"></i> </button>
+                  <button class="btn card_btn">Web view <i class="fa-solid fa-arrow-up-right-from-square Cicon"></i>
+                  </button>
+
+                </div>
+
+
+              </div>
+
             </div>
 
 

@@ -1,0 +1,15 @@
+@media only screen and (max-width: 768px) {
+    .hero {
+      flex-direction: column; /* Stack elements vertically on mobile */
+      align-items: center; /* Center elements horizontally */
+      padding: 20px 0; /* Adjust padding for mobile */
+    }
+  
+    .intro {
+      width: 100%; /* Make intro section full width on mobile */
+    }
+  
+    .textChangeContainer {
+      width: 100%; /* Make text container full width on mobile */
+    }
+  }
