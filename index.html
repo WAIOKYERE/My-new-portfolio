@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Portfolio Homepage</title>
   <link rel="stylesheet" href="./styles/portfolio.css" />
+  <link rel="stylesheet" href="./styles/contact.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
@@ -68,7 +69,7 @@
           <i style="--clr: #2400FF"></i>
           <i style="--clr: #ff0057"></i>
           <i style="--clr: #fffd44"></i>
-          <img src="./Resources/HERO IMG.png" alt="Profile Picture" />
+          <img src="./Resources/IMG/HERO IMG.png" alt="Profile Picture" />
         </div>
       </div>
     </section>
@@ -76,7 +77,7 @@
     <section class="about" id="about">
 
       <div class="aboutPic">
-        <img src="./Resources/About img.png" alt="Profile Picture" />
+        <img src="./Resources/IMG/About img.png" alt="Profile Picture" />
       </div>
 
       <div class="aboutContainer">
@@ -202,7 +203,7 @@
       </div>
 
     </section>
-
+    <!-- 
     <section id="portfolio">
       <div class="portfolio">
         <div class="header">
@@ -221,9 +222,9 @@
 
         <div class="PortfolioContent">
 
-          <div id="Institutional" class="all">
+          <div id="Institutional" >
 
-            <div class="card">
+            <div class="card all">
               <div class="card_image">
                 <img src="https://picsum.photos/500/300/?image=10">
               </div>
@@ -234,115 +235,25 @@
               </div>
             </div>
           
-            <div class="card">
-              <div class="card_image">
-                <img src="https://picsum.photos/500/300/?image=10">
-              </div>
-              <div class="card_content">
-                <h2 class="card_title">Card Grid Layout</h2>
-                <p class="card_text">Demo of pixel perfect pure CSS simple responsive card grid layout</p>
-                <button class="btn card_btn">Read More</button>
-              </div>
+          </div>
+
+          <div id="autoMobile" >
+            <div class="card all">
+
             </div>
           </div>
 
-          <div id="autoMobile" class="all">
-            autoMobile
+          <div id="Financial" >
+            <div class="card all"></div>
           </div>
 
-          <div id="Financial" class="all">
-            Financial
-          </div>
-
-          <div id="eCommerce" class="all">
-            E-commerce
-          </div>
+          <div id="eCommerce">
+<div class="card all"></div> 
+         </div>
 
           <div id="aI" class="all">
-            My AI
+            <div class="card all"></div>
           </div>
-
-
-
-
-
-
-          <!-- <div class="main">
-            <h1>Responsive Card Grid Layout</h1>
-            <ul class="cards">
-              <li class="cards_item">
-                <div class="card">
-                  <div class="card_image"><img src="https://picsum.photos/500/300/?image=10"></div>
-                  <div class="card_content">
-                    <h2 class="card_title">Card Grid Layout</h2>
-                    <p class="card_text">Demo of pixel perfect pure CSS simple responsive card grid layout</p>
-                    <button class="btn card_btn">Read More</button>
-                  </div>
-                </div>
-              </li>
-              <li class="cards_item">
-                <div class="card">
-                  <div class="card_image"><img src="https://picsum.photos/500/300/?image=5"></div>
-                  <div class="card_content">
-                    <h2 class="card_title">Card Grid Layout</h2>
-                    <p class="card_text">Demo of pixel perfect pure CSS simple responsive card grid layout</p>
-                    <button class="btn card_btn">Read More</button>
-                  </div>
-                </div>
-              </li>
-              <li class="cards_item">
-                <div class="card">
-                  <div class="card_image"><img src="https://picsum.photos/500/300/?image=11"></div>
-                  <div class="card_content">
-                    <h2 class="card_title">Card Grid Layout</h2>
-                    <p class="card_text">Demo of pixel perfect pure CSS simple responsive card grid layout</p>
-                    <button class="btn card_btn">Read More</button>
-                  </div>
-                </div>
-              </li>
-              <li class="cards_item">
-                <div class="card">
-                  <div class="card_image"><img src="https://picsum.photos/500/300/?image=14"></div>
-                  <div class="card_content">
-                    <h2 class="card_title">Card Grid Layout</h2>
-                    <p class="card_text">Demo of pixel perfect pure CSS simple responsive card grid layout</p>
-                    <button class="btn card_btn">Read More</button>
-                  </div>
-                </div>
-              </li>
-              <li class="cards_item">
-                <div class="card">
-                  <div class="card_image"><img src="https://picsum.photos/500/300/?image=17"></div>
-                  <div class="card_content">
-                    <h2 class="card_title">Card Grid Layout</h2>
-                    <p class="card_text">Demo of pixel perfect pure CSS simple responsive card grid layout</p>
-                    <button class="btn card_btn">Read More</button>
-                  </div>
-                </div>
-              </li>
-              <li class="cards_item">
-                <div class="card">
-                  <div class="card_image"><img src="https://picsum.photos/500/300/?image=2"></div>
-                  <div class="card_content">
-                    <h2 class="card_title">Card Grid Layout</h2>
-                    <p class="card_text">Demo of pixel perfect pure CSS simple responsive card grid layout</p>
-                    <button class="btn card_btn">Read More</button>
-                  </div>
-                </div>
-              </li>
-            </ul>
-          </div> -->
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -350,14 +261,195 @@
 
       </div>
 
+    </section> -->
+
+    <section id="portfolio">
+      <div class="portfolio">
+        <div class="header">
+          <h2>Portfolio</h2>
+        </div>
+
+        <div class="PortfolioBtnGroup">
+          <button class="PortfolioBtn" onclick="openAll(this)" id="openDefault">ALL</button>
+          <button class="PortfolioBtn" onclick="openPortfolio('Institutional', this)">Institutional</button>
+          <button class="PortfolioBtn" onclick="openPortfolio('autoMobile', this)">Auto Mobile</button>
+          <button class="PortfolioBtn" onclick="openPortfolio('Financial', this)">Financial</button>
+          <button class="PortfolioBtn" onclick="openPortfolio('eCommerce', this)">E-Commerce</button>
+          <button class="PortfolioBtn" onclick="openPortfolio('aI', this)">A.I</button>
+        </div>
+
+        <div class="PortfolioContent">
+          <!-- Institutional Section -->
+          <div id="Institutional" class="all">
+            <div class="card">
+              <div class="card_image">
+                <img src="https://picsum.photos/500/300/?image=10">
+              </div>
+              <div class="card_content">
+                <h2 class="card_title">Institutional Project 1</h2>
+                <p class="card_text">Description of Institutional Project 1</p>
+                <button class="btn card_btn">Read More</button>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card_image">
+                <img src="https://picsum.photos/500/300/?image=20">
+              </div>
+              <div class="card_content">
+                <h2 class="card_title">Institutional Project 2</h2>
+                <p class="card_text">Description of Institutional Project 2</p>
+                <button class="btn card_btn">Read More</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Auto Mobile Section -->
+          <div id="autoMobile" class="all">
+            <div class="card">
+              <div class="card_image">
+                <img src="https://picsum.photos/500/300/?image=30">
+              </div>
+              <div class="card_content">
+                <h2 class="card_title">Auto Mobile Project 1</h2>
+                <p class="card_text">Description of Auto Mobile Project 1</p>
+                <button class="btn card_btn">Read More</button>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card_image">
+                <img src="https://picsum.photos/500/300/?image=40">
+              </div>
+              <div class="card_content">
+                <h2 class="card_title">Auto Mobile Project 2</h2>
+                <p class="card_text">Description of Auto Mobile Project 2</p>
+                <button class="btn card_btn">Read More</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Financial Section -->
+          <div id="Financial" class="all">
+            <div class="card">
+              <div class="card_image">
+                <img src="https://picsum.photos/500/300/?image=50">
+              </div>
+              <div class="card_content">
+                <h2 class="card_title">Financial Project 1</h2>
+                <p class="card_text">Description of Financial Project 1</p>
+                <button class="btn card_btn">Read More</button>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card_image">
+                <img src="https://picsum.photos/500/300/?image=60">
+              </div>
+              <div class="card_content">
+                <h2 class="card_title">Financial Project 2</h2>
+                <p class="card_text">Description of Financial Project 2</p>
+                <button class="btn card_btn">Read More</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- E-Commerce Section -->
+          <div id="eCommerce" class="all">
+            <div class="card">
+              <div class="card_image">
+                <img src="https://picsum.photos/500/300/?image=70">
+              </div>
+              <div class="card_content">
+                <h2 class="card_title">E-Commerce Project 1</h2>
+                <p class="card_text">Description of E-Commerce Project 1</p>
+                <button class="btn card_btn">Read More</button>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card_image">
+                <img src="https://picsum.photos/500/300/?image=80">
+              </div>
+              <div class="card_content">
+                <h2 class="card_title">E-Commerce Project 2</h2>
+                <p class="card_text">Description of E-Commerce Project 2</p>
+                <button class="btn card_btn">Read More</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- A.I Section -->
+          <div id="aI" class="all">
+            <div class="card">
+              <div class="card_image">
+                <img src="https://picsum.photos/500/300/?image=90">
+              </div>
+              <div class="card_content">
+                <h2 class="card_title">A.I Project 1</h2>
+                <p class="card_text">Description of A.I Project 1</p>
+                <button class="btn card_btn">Read More</button>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card_image">
+                <img src="https://picsum.photos/500/300/?image=100">
+              </div>
+              <div class="card_content">
+                <h2 class="card_title">A.I Project 2</h2>
+                <p class="card_text">Description of A.I Project 2</p>
+                <button class="btn card_btn">Read More</button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
     </section>
 
-    <section id="contact">
+
+
+
+
+
+
+
+    <section id="contact" class="contact">
 
       <div class="contactContainer">
 
         <div class="contactContent">
-          <h3>Link Up</h3>
+          <h1 class="contactHeaders">GET IN TOUCH</h1>
+
+          <div class="contactgroups">
+
+            <div class="contactMe">
+              <h2 class="contactHeaders">CONTACT ME</h2>
+            </div>
+
+
+            <div class="form-container">
+              <form class="form">
+                <h2 class="contactHeaders">MESSAGE ME</h2>
+
+                <div class="form-group">
+                  <label for="name">Name</label>
+                  <input type="text" id="name" name="name" placeholder="Your Name" required>
+                </div>
+
+                <div class="form-group">
+                  <label for="email">Email</label>
+                  <input type="email" id="email" name="email" placeholder="Your Email" required>
+                </div>
+
+                <div class="form-group">
+                  <label for="message">Message</label>
+                  <textarea id="message" name="message" rows="4" placeholder="Your Message" required></textarea>
+                </div>
+
+                <button type="submit" class="submit-btn">Submit</button>
+              </form>
+            </div>
+
+
+          </div>
+
         </div>
 
       </div>
