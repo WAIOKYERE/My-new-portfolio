@@ -184,9 +184,6 @@
 
 }
 
-
-
-/* Medium devices (landscape tablets, 768px to 991.98px) */
 @media only screen and (max-width: 991.98px) {
   body {
     font-size: 1rem;
@@ -203,10 +200,7 @@
     font-size: 1.2rem;
   }
 
-  nav ul li a:hover {
-    color: #000000;
 
-  }
 
 
   .logo h1 {
@@ -215,21 +209,20 @@
 
 
   .hero {
-    width: 70%;
+    width: 90%;
     margin: auto;
-    margin-top: 50px;
-    margin-bottom: 80px;
+    margin-top: 150px;
+    margin-bottom: 180px;
   }
 
   .intro {
-    width: 50px;
+    width: 500px;
     margin: auto;
     text-align: center;
-    order: 2;
   }
 
   .text>.greetings {
-    width: auto;
+    width: 90%;
   }
 
 
@@ -237,7 +230,7 @@
     font-size: 1.7rem;
   }
 
-  .hide{
+  .hide {
     display: block;
   }
 
@@ -245,7 +238,7 @@
     display: none;
   }
 
-   .btn-hire,
+  .btn-hire,
   .btn-cv {
     padding: 5px 20px 5PX 20PX;
     margin: 8px;
@@ -272,19 +265,12 @@
   }
 
   .aboutPic img {
-    display:none;
+    display: none;
   }
 
-
-
-
-
-  
-
   .aboutContainer {
-    max-width: 90%;
-    margin-left: 10px;
-    padding: 0px 10px 10px 10px;
+    width: 100%;
+
   }
 
   .about-text p {
@@ -321,11 +307,10 @@
     color: black;
     padding: 8px 8px;
     font-size: 15px;
-    width: auto;
+    width: 20%;
   }
 
   .tabcontent {
-    height: 100%;
     padding: 10px 20px;
   }
 
@@ -339,161 +324,106 @@
     font-size: 2.5rem;
   }
 
-
   .portfolio {
     max-width: 90%;
-    padding: 10px;
-
   }
 
-  .PortfolioBtn {
-    border: 2px solid #000000;
+  .PortfolioContent {
+    flex-wrap: wrap;
   }
-
 
   .card {
-    margin: 15px;
+    width: 350px;
+    margin: 20px;
+  }
+
+  .card_image img {
+    width: 100%;
+    height: auto;
+  }
+
+  .contact {
+    width: 100%;
+    height: 754px;
+    background: linear-gradient(180deg, rgba(244, 244, 244, 0.4) 20.62%, rgba(0, 0, 0, 0.3) 90.2%);
+    opacity: var(--sds-size-stroke-border);
+
+  }
+
+  .contactContainer {
+    margin-top: 100px;
+  }
+
+  .contactContent {
+    width: 100%;
   }
 
 
+  .form,
+  .contactMe {
+    width: 400px;
+  }
 
 }
-
-
-/* .aboutPic {
-    width: auto;
-    border-radius: 50%;
-  } */
-
-/* 
-  .aboutPic:hover {
-    transform: rotateY(10deg);
-  } */
-
-
-.aboutContainer {
-  border: 2px solid black;
-  border-radius: 25px;
-  height: auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-  max-width: 100%;
-  margin-left: 50px;
-  padding: 0px 20px 20px 20px;
-  text-align: center;
-}
-
-.about-text p {
-  text-align: left;
-  font-size: 1.15rem;
-}
-
-.dropContainer {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 10px;
-}
-
-.dropContainer h3 {
-  text-align: center;
-}
-
-.aboutBtnContent {
-  width: 100%;
-  height: 300px;
-  border-radius: 50px;
-}
-
-.aboutBtn {
-  width: auto;
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 10px;
-}
-
-.aboutTablink {
-  color: black;
-  float: left;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  padding: 10px 20px;
-  font-size: 17px;
-  width: 20%;
-  border-radius: 5px;
-  margin: 0px 10px 2px 5px;
-  /* border-radius: 0% 0% 50% 10% ; */
-}
-
-.aboutTablink:hover {
-  background-color: #ddd;
-}
-
-.tabcontent {
-  height: 100%;
-  display: none;
-  padding: 10px 80px;
-  background-color: #f1f1f1;
-  color: black;
-  border-radius: 5px;
-  text-align: left;
-}
-
-table {
-  width: 100%;
-}
-
-tbody {
-  width: 100%;
-}
-
-
-td {
-  padding: 8px;
-  font-size: 1rem;
-}
-
-
-
-.technologies {
-  width: 100%;
-  height: 100px;
-  background: linear-gradient(to top, rgba(241, 239, 239, 0.5), rgba(145, 143, 143, 0.5));
-  color: #fff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 50px 0px;
-}
-
-
-
 
 
 
 @media only screen and (max-width: 768px) {
+
   .hero {
     flex-direction: column;
-    /* Stack elements vertically on mobile */
-    align-items: center;
-    /* Center elements horizontally */
-    padding: 20px 0;
-    /* Adjust padding for mobile */
+    margin-top: 80px;
+    margin-bottom: 150px;
   }
 
   .intro {
-    width: 100%;
-    /* Make intro section full width on mobile */
+    order: 1;
   }
 
-  .textChangeContainer {
-    width: 100%;
-    /* Make text container full width on mobile */
+  .text>.greetings>h1 {
+    font-size: 1.5rem;
   }
+
+  .technologies .Ticon {
+    font-size: 2rem;
+  }
+
+  .card {
+    width: 300px;
+  }
+
+
+  .contact {
+    margin: auto;
+    height: 700px;
+
+  }
+
+  .form,
+  .contactMe {
+    width: 380px;
+    margin: 5px;
+  }
+
+  .eMail {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .phone a,
+  .eMail a {
+    font-size: 1.1rem;
+
+  }
+
+  .Cicon {
+    font-size: 1.3rem;
+    margin: 0px;
+  }
+
 }
+
+
 
 
 
@@ -501,5 +431,204 @@ td {
 @media only screen and (max-width: 575.98px) {
   body {
     font-size: 14px;
+  }
+
+
+  .navContainer {
+    display: none;
+  }
+
+  .menuBtn {
+    display: block;
+    cursor: pointer;
+  }
+
+  .menuBtn:hover {
+    color: red;
+  }
+
+
+  nav ul {
+    list-style: none;
+    width: 100%;
+    height: 300px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-top: 60px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    z-index: 1000;
+
+  }
+
+  nav ul li {
+    margin: 20px;
+  }
+
+
+
+
+  .hero {
+    width: 90%;
+  }
+
+  .intro {
+    width: 100%;
+    margin: auto;
+  }
+
+  .text>.greetings {
+    width: 100%;
+  }
+
+
+
+  .aboutContainer {
+    width: 95%;
+    margin: auto;
+    margin-right: 50px;
+
+  }
+
+  .about-text p {
+    text-align: center;
+  }
+
+
+  .aboutBtnContent {
+    height: auto;
+  }
+
+  .aboutBtn {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5px;
+  }
+
+  .aboutTablink {
+    width: 100%;
+  }
+
+
+
+  /* .technologies {
+  width: 100%;
+  height: 200px;
+  margin: 80px 0px;
+}
+
+.technologies .Ticon {
+  font-size: 1.5rem;
+} */
+
+  .technologies {
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .techIcons {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 30px;
+    animation: scrollInfinite 10s linear infinite;
+  }
+
+
+
+  @keyframes scrollInfinite {
+    0% {
+      transform: translateX(0);
+    }
+
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+
+  .techIcons::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 100%;
+    height: 100%;
+  }
+
+
+
+
+  .card {
+    width: 280px;
+    margin: auto;
+    margin-bottom: 20px;
+  }
+
+  .contact {
+    width: 100%;
+    height: 7540px;
+    background: linear-gradient(180deg, rgba(244, 244, 244, 0.4) 20.62%, rgba(0, 0, 0, 0.3) 90.2%);
+    opacity: var(--sds-size-stroke-border);
+
+}
+
+
+  .contactContainer {
+    height: 800px;
+  }
+
+  .contactgroups {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+
+
+  .form,
+  .contactMe {
+    width: 380px;
+    margin: 5px;
+  }
+
+  .eMail {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .phone a,
+  .eMail a {
+    font-size: 1.1rem;
+
+  }
+
+  .Cicon {
+    font-size: 1.3rem;
+    margin: 0px;
+  }
+
+
+
+
+
+
+
+  .modern-form {
+    padding: 30px;
+  }
+
+  .contactHeaders {
+    font-size: 1.6rem;
+  }
+
+  .submit-btn {
+    font-size: 1rem;
   }
 }

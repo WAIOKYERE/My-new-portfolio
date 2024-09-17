@@ -128,3 +128,27 @@ document.getElementById("openDefault").click();
 
 
 
+var menuButton = document.getElementsByClassName("menuBtn")[0];
+var navContainer = document.getElementsByClassName("navContainer")[0];
+var menuItems = document.getElementsByClassName("menuItem");
+
+function toggleMenu() {
+  if (navContainer.style.display === "none" || navContainer.style.display === "") {
+    navContainer.style.display = "flex"; 
+  } else {
+    navContainer.style.display = "none";  
+  }
+}
+
+function hideMenu() {
+  navContainer.style.display = "none";
+}
+
+menuButton.addEventListener("click", toggleMenu);
+
+for (var i = 0; i < menuItems.length; i++) {
+  menuItems[i].addEventListener("click", hideMenu);
+}
+
+
+
