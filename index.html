@@ -33,10 +33,10 @@
 
         <nav>
           <ul>
-            <li><a href="#homepage" class="menuItem" >HOME</a></li>
-            <li><a href="#about" class="menuItem" >ABOUT</a></li>
-            <li><a href="#portfolio" class="menuItem" >Portfolio</a></li>
-            <li><a href="#contact" class="menuItem" >CONTACT</a></li>
+            <li><a href="#homepage" class="menuItem">HOME</a></li>
+            <li><a href="#about" class="menuItem">ABOUT</a></li>
+            <li><a href="#portfolio" class="menuItem">Portfolio</a></li>
+            <li><a href="#contact" class="menuItem">CONTACT</a></li>
           </ul>
         </nav>
 
@@ -115,7 +115,7 @@
             <button class="aboutTablink" onclick="openPage('Skills', this)" id="defaultOpen">Skills</button>
             <button class="aboutTablink" onclick="openPage('Experience', this)">Experience</button>
             <button class="aboutTablink" onclick="openPage('Education', this)">Education</button>
-            <button class="aboutTablink" onclick="openPage('Development', this)">Development</button>
+            <button class="aboutTablink" onclick="openPage('Development', this)">Certificates</button>
             <button class="aboutTablink" onclick="openPage('Employment', this)">Employment</button>
           </div>
 
@@ -143,11 +143,11 @@
                     <td>University Of Cape Coast</td>
                     <td>BSc Computer Science - CGPA 3.3</td>
                   </tr>
-                  <tr>
+                  <!-- <tr>
                     <td>Aug 2012 - May 2015</td>
                     <td>Obuasi Senior High Technical School</td>
                     <td>Diploma In General Science</td>
-                  </tr>
+                  </tr> -->
                 </table>
               </div>
 
@@ -165,32 +165,26 @@
                 <h3>Professional development</h3>
                 <table>
                   <tr>
-                    <td>June 2024 - August 2024</td>
                     <td>AWS</td>
                     <td>Certified Cloud Practitioner</td>
                   </tr>
                   <tr>
-                    <td>May 2024 - July 2024</td>
                     <td>ALX</td>
                     <td>AI Career Essentials</td>
                   </tr>
-                  <tr>
-                    <td>Jan 2024 - Present</td>
+                  <!-- <tr>
                     <td>Udemy</td>
                     <td>The Complete 2024 Web Development Bootcamp</td>
-                  </tr>
+                  </tr> -->
                   <tr>
-                    <td>Nov 2023 -Dec 2023</td>
                     <td>Alison</td>
                     <td>Diploma in Website Development Using HTML and CSS</td>
                   </tr>
                   <tr>
-                    <td>May 2023 - June 2023</td>
                     <td>Alison</td>
                     <td>Figma Design Basics and Features</td>
                   </tr>
                   <tr>
-                    <td>Feb 2019 - April 2019</td>
                     <td>Alison</td>
                     <td>Microsoft Office 2010-Revised 2018</td>
                   </tr>
@@ -216,14 +210,15 @@
         <i class="fa-brands fa-github Ticon"></i>
         <i class="fa-brands fa-npm Ticon"></i>
 
-        <i class="fa-brands fa-figma Ticon"></i>
-        <i class="fa-brands fa-html5 Ticon"></i>
-        <i class="fa-brands fa-css3-alt Ticon"></i>
-        <i class="fa-brands fa-square-js Ticon"></i>
-        <i class="fa-brands fa-bootstrap Ticon"></i>
-        <i class="fa-brands fa-node Ticon"></i>
-        <i class="fa-brands fa-github Ticon"></i>
-        <i class="fa-brands fa-npm Ticon"></i>
+        <i class="fa-brands fa-figma Ticon hide"></i>
+        <i class="fa-brands fa-html5 Ticon hide"></i>
+        <i class="fa-brands fa-css3-alt Ticon hide"></i>
+        <i class="fa-brands fa-square-js Ticon hide"></i>
+        <i class="fa-brands fa-bootstrap Ticon hide"></i>
+        <i class="fa-brands fa-node Ticon hide"></i>
+        <i class="fa-brands fa-github Ticon hide"></i>
+        <i class="fa-brands fa-npm Ticon hide"></i>
+
 
       </div>
 
@@ -232,7 +227,7 @@
     <section id="portfolio">
       <div class="portfolio">
         <div class="header">
-          <h2>Portfolio</h2>
+          <h2>Projects</h2>
         </div>
 
         <div class="PortfolioBtnGroup">
@@ -427,22 +422,22 @@
 
 
             <div class="form-container">
-              <form class="form">
+              <form action="https://formspree.io/f/mwpedpny" method="POST" class="form">
                 <h2 class="contactHeaders">MESSAGE ME</h2>
 
                 <div class="form-group">
                   <label for="name">Name</label>
-                  <input type="text" id="name" name="name" placeholder="Your Name" required>
+                  <input type="text" id="name" name="Name" placeholder="Your Name" required>
                 </div>
 
                 <div class="form-group">
                   <label for="email">Email</label>
-                  <input type="email" id="email" name="email" placeholder="Your Email" required>
+                  <input type="email" id="email" name="Email" placeholder="Your Email" required>
                 </div>
 
                 <div class="form-group">
                   <label for="message">Message</label>
-                  <textarea id="message" name="message" rows="4" placeholder="Your Message" required></textarea>
+                  <textarea id="message" name="Message" rows="4" placeholder="Your Message" required></textarea>
                 </div>
 
                 <button type="submit" class="submit-btn">Submit</button>

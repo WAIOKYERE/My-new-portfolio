@@ -277,8 +277,6 @@ nav ul li a:hover {
 
 
 
-
-
 .about {
     width: 80%;
     height: auto;
@@ -369,21 +367,24 @@ nav ul li a:hover {
     background-color: #f1f1f1;
     color: black;
     border-radius: 5px;
-    text-align: left;
+    text-align: center;
 }
 
 table {
     width: 100%;
 }
 
-tbody {
-    width: 100%;
-}
 
 
 td {
     padding: 8px;
     font-size: 1rem;
+}
+
+.development td {
+    padding: 8px;
+    font-size: 1rem;
+    margin: 50px 20px;
 }
 
 
@@ -404,6 +405,11 @@ td {
     font-size: 3.5rem;
     margin: 30px;
     color: black;
+}
+
+
+.technologies .hide {
+    display: none;
 }
 
 
@@ -523,18 +529,3 @@ footer {
     color: #fff;
 }
 
-
-
-@media (max-width: 768px) {
-    .card {
-        width: calc(50% - 20px);
-        /* On smaller screens, fit two cards per row */
-    }
-}
-
-@media (max-width: 480px) {
-    .card {
-        width: calc(100% - 20px);
-        /* On very small screens, cards take up full width */
-    }
-}
