@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Portfolio Homepage</title>
+  <title>Okyere Wai</title>
   <link rel="stylesheet" href="./styles/portfolio.css" />
   <link rel="stylesheet" href="./styles/contact.css">
   <link rel="stylesheet" href="./styles/responsive.css">
@@ -17,6 +17,19 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
     integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+  <script src="./Script/email.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+  </script>
+
+  <script type="text/javascript">
+    (function () {
+      emailjs.init({
+        publicKey: "tZ-myVcfvZQdas7PL"
+      });
+    })();
+  </script>
 
 
 </head>
@@ -409,10 +422,14 @@
                 </div>
 
                 <div class="Cbuttons">
-                  <button class="btn card_btn">Download CV <i class="fa-solid fa-file-arrow-down Cicon"></i> </button>
-                  <button class="btn card_btn">Web view <i class="fa-solid fa-arrow-up-right-from-square Cicon"></i>
+                  <button class="btn card_btn"
+                    onclick="window.open('./Resources/docs/Samuel Wai Okyere_CV.pdf', '_blank')">
+                    Download CV <i class="fa-solid fa-file-arrow-down Cicon"></i>
                   </button>
 
+                  <button class="btn card_btn" onclick="window.open('https://waiokyere.github.io/My-CV/', '_blank')">
+                    Web view <i class="fa-solid fa-arrow-up-right-from-square Cicon"></i>
+                  </button>
                 </div>
 
 
@@ -422,7 +439,8 @@
 
 
             <div class="form-container">
-              <form action="https://formspree.io/f/mwpedpny" method="POST" class="form">
+
+              <form class="form" id="contactForm" onsubmit="sendMail(event)">
                 <h2 class="contactHeaders">MESSAGE ME</h2>
 
                 <div class="form-group">
@@ -442,8 +460,8 @@
 
                 <button type="submit" class="submit-btn">Submit</button>
               </form>
-            </div>
 
+            </div>
 
           </div>
 
@@ -461,6 +479,7 @@
   </footer>
 
   <script src="./Script/script.js"></script>
+
 
 </body>
 
