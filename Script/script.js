@@ -7,8 +7,8 @@ document.addEventListener("DOMContentLoaded", function () {
   ];
   let index = 0;
   let charIndex = 0;
-  const typingSpeed = 100; // Speed for typing
-  const delayBetweenTexts = 2000; // Delay before starting the next text
+  const typingSpeed = 100;
+  const delayBetweenTexts = 2000;
   const element = document.getElementById("textChange");
 
   function typeText() {
@@ -44,38 +44,6 @@ function openPage(pageName, elmnt) {
 }
 
 document.getElementById("defaultOpen").click();
-
-//   function openPortfolio(pageName, elmnt) {
-//     var i, all, PortfolioBtn;
-//     all = document.getElementsByClassName("all");
-//     for (i = 0; i < all.length; i++) {
-//       all[i].style.display = "none";
-//     }
-//     PortfolioBtn = document.getElementsByClassName("PortfolioBtn");
-//     for (i = 0; i < PortfolioBtn.length; i++) {
-//       PortfolioBtn[i].style.border = "none";
-//     }
-//     document.getElementById(pageName).style.display = "block";
-//     elmnt.style.border = "2px solid black";
-//   }
-
-//   function openAll(all, elmnt) {
-
-//     var i, all, PortfolioBtn;
-//     PortfolioBtn = document.getElementsByClassName("PortfolioBtn");
-//     for (i = 0; i < PortfolioBtn.length; i++) {
-//       PortfolioBtn[i].style.border = "none";
-//     }
-
-//     all = document.getElementsByClassName("all");
-//     for (i = 0; i < all.length; i++) {
-//       all[i].style.display = "block";
-//       elmnt.style.border = "2px solid black";
-
-//     }
-//    }
-
-//    document.getElementById("openDefault").click();
 
 function openPortfolio(pageName, elmnt) {
   var i, allSections, portfolioButtons;
