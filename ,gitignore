@@ -1,0 +1,34 @@
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Node.js (in case you use it later for tooling)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment files (in case you add secrets)
+.env
+.env.*
+
+# VS Code settings
+.vscode/
+
+# Build directory (optional if you add a build step)
+dist/
+build/
+
+# Temporary files
+*.tmp
+*.swp
+*.swo
+
+# Mac/Linux trash folder
+.Trash-*
+
+# S3 deployment artifacts (optional if you use CLI tools)
+.aws-s3-cache/
